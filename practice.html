@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+  </head>
+  <body>
+    <h1>Hello everyone</h1>
+
+  <p>We are practicing debugging</p>
+    <script type="text/javascript">
+function calculatePay(){
+  var payRate= 15; numHours = 40;
+  var grossPay = payRate * numHours;
+  console.log ("grossPay is"+ grossPay);
+  var federalTaxes = grossPay * .06794;
+  var stateTaxes = grossPay * .0476;
+  var socialSecurity = grossPay * .062;
+  var mediacare= grossPay * .0145;
+  var netPay= grossPay - federalTaxes;
+  console.log("grossPay minus federalTaxes is" + netPay)
+  netPay -=stateTaxes;
+    console.log("netPay minus stateTaxes is" + netPay)
+  netPay -=socialSecurity;
+    console.log("netPay minus socialSecurity is" + netPay)
+  netPay -=mediacare;
+    console.log("grossPay minus mediacare is" + netPay)
+  return netPay;
+}
+calculatePay();
+    </script>
+  </body>
+</html>
