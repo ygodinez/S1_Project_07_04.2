@@ -11,6 +11,7 @@
 
 
 /* global variables tracking status of each form section */
+//Fixed all the closing brackets.
 var acresComplete = false;
 var cropsComplete = false;
 var monthsComplete = false;
